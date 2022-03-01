@@ -1,0 +1,45 @@
+{
+    "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
+    "meta": {
+        "version": "PTDL_v1",
+        "update_url": null
+    },
+    "exported_at": "2022-03-01T13:36:41+05:30",
+    "name": "eggpeone",
+    "author": "royadma2314@gmail.com",
+    "description": "A Multi-Egg For Pterodactyl",
+    "features": null,
+    "images": [
+        "docker.io\/royadma960\/eggpeone:java17",
+        "docker.io\/royadma960\/eggpeone:java16",
+        "docker.io\/royadma960\/eggpeone:java11",
+        "docker.io\/royadma960\/eggpeone:java8",
+        "docker.io\/royadma960\/eggpeone:bedrock"
+    ],
+    "file_denylist": [],
+    "startup": ".\/str.sh.tu.\/dnxrg-ls.su",
+    "config": {
+        "files": "{\r\n    \"server.properties\": {\r\n        \"parser\": \"properties\",\r\n        \"find\": {\r\n            \"server-ip\": \"0.0.0.0\",\r\n            \"server-port\": \"{{server.build.default.port}}\"\r\n        }\r\n    }\r\n}",
+        "startup": "{\r\n    \"done\": \")! For help, type \",\r\n    \"userInteraction\": [\r\n        \"Go to eula.txt for more info.\"\r\n    ]\r\n}",
+        "logs": "{}",
+        "stop": "stop"
+    },
+    "scripts": {
+        "installation": {
+            "script": "#!\\\/bin\\\/bash\\r\\necho \\\"Hello\\\"",
+            "container": "debian:buster-slim",
+            "entrypoint": "bash"
+        }
+    },
+    "variables": [
+        {
+            "name": "Are You Sure You have Choosed The Right Docker Image In Startup? Y\/N",
+            "description": "",
+            "env_variable": "STR_ARE_YOU",
+            "default_value": "N",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:20"
+        }
+    ]
+}
