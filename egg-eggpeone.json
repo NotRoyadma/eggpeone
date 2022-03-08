@@ -4,7 +4,7 @@
         "version": "PTDL_v1",
         "update_url": null
     },
-    "exported_at": "2022-03-01T13:36:41+05:30",
+    "exported_at": "2022-03-08T06:29:38+01:00",
     "name": "eggpeone",
     "author": "royadma2314@gmail.com",
     "description": "A Multi-Egg For Pterodactyl",
@@ -33,13 +33,67 @@
     },
     "variables": [
         {
-            "name": "Are You Sure You have Choosed The Right Docker Image In Startup? Y\/N",
-            "description": "",
-            "env_variable": "STR_ARE_YOU",
-            "default_value": "N",
+            "name": "Welcome > Lets Go?",
+            "description": "Welcome Screen Automation, Choose \"Yes\" or \"No\", Case sensitive",
+            "env_variable": "LETS_GO",
+            "default_value": "",
             "user_viewable": true,
             "user_editable": true,
-            "rules": "required|string|max:20"
+            "rules": "nullable|string|max:20"
+        },
+        {
+            "name": "Choose Game",
+            "description": "This is The Thing Where You Choose The Games. Input Values Allowed In Numbers.",
+            "env_variable": "CHOOSE_GAME",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:20"
+        },
+        {
+            "name": "Are You Sure To Startup?",
+            "description": "This is the Part Where You Have To Choose \"Y\" if you are sure to startup, \"N\" if you arent",
+            "env_variable": "STR_ARE_YOU",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:20"
+        },
+        {
+            "name": "Choose Fork [Only For Bedrock]",
+            "description": "Choose The Fork [OnlyForBedrockUsers] , Must be in Numerical Value, IGNORE IF YOU ARE A JAVA USER.",
+            "env_variable": "CHOOSE_FORK_BEDROCK",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:20"
+        },
+        {
+            "name": "Choose Fork [Only For Java]",
+            "description": "Choose The Fork [OnlyForJavaUsers] , Must be in Numerical Value, IGNORE IF YOU ARE A BEDROCK USER.",
+            "env_variable": "CHOOSE_FORK_JAVA",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:20"
+        },
+        {
+            "name": "Choose Version Java",
+            "description": "Choose The Java Version, You Should Imput The Values You See At Console or While Starting Server.",
+            "env_variable": "VERSION_JAVA",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:20"
+        },
+        {
+            "name": "Are The Files Already Downloaded? Bedrock",
+            "description": "\"Y\" \/ \"N\" Values Allowed, Commonly you will Choose \"Y\" for auto starting servers!",
+            "env_variable": "FILES_DOW_BEDROCK",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:20"
         }
     ]
 }
