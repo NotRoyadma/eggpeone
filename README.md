@@ -3,15 +3,8 @@
 Completely Not A Multi-Egg
 ## Installation
 This Video Might helps "https://www.youtube.com/watch?v=zsDbhQcELAc"
-```bash
-Just import The Egg lol
-```
 
-## Customization
-
-```python
-I Will Make You Customized Egg Just For 9$!
-```
+This egg is No Longer Maintained For Public, the egg is Completely Claimed by DNxRG and maintained there!
 
 ## Creator
 Not Made By Royadma For DNxRG!
